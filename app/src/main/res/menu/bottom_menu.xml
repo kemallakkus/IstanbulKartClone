@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Anasayfa"
+        android:icon="@drawable/ic_home"
+        android:id="@+id/homeFragment2"/>
+
+    <item
+        android:title="Kartlarım"
+        android:icon="@drawable/ic_cards"
+        android:id="@+id/myCardsFragment"/>
+
+
+    <item
+        android:title="QR ile öde"
+        android:id="@+id/QRFragment2"/>
+
+    <item
+        android:title="İşlemler"
+        android:icon="@drawable/ic_transfer"
+        android:id="@+id/transactionsFragment"/>
+
+
+    <item
+        android:title="Bul"
+        android:id="@+id/findFragment2"
+        android:icon="@drawable/ic_location"/>
+
+
+
+
+</menu>

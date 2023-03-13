@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment2">
+
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.kemalakkus.istanbulkartclone.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment2_to_myCardsFragment"
+            app:destination="@id/myCardsFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_transactionsFragment"
+            app:destination="@id/transactionsFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_findFragment2"
+            app:destination="@id/findFragment2" />
+        <action
+            android:id="@+id/action_homeFragment2_to_QRFragment2"
+            app:destination="@id/QRFragment2" />
+        <action
+            android:id="@+id/action_homeFragment2_to_passwordFragment"
+            app:destination="@id/passwordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myCardsFragment"
+        android:name="com.kemalakkus.istanbulkartclone.fragments.MyCardsFragment"
+        android:label="fragment_my_cards"
+        tools:layout="@layout/fragment_my_cards" >
+        <action
+            android:id="@+id/action_myCardsFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+        <action
+            android:id="@+id/action_myCardsFragment_self"
+            app:destination="@id/myCardsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionsFragment"
+        android:name="com.kemalakkus.istanbulkartclone.fragments.TransactionsFragment"
+        android:label="fragment_transactions"
+        tools:layout="@layout/fragment_transactions" >
+        <action
+            android:id="@+id/action_transactionsFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/QRFragment2"
+        android:name="com.kemalakkus.istanbulkartclone.fragments.QRFragment"
+        android:label="fragment_q_r"
+        tools:layout="@layout/fragment_q_r" >
+        <action
+            android:id="@+id/action_QRFragment2_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/findFragment2"
+        android:name="com.kemalakkus.istanbulkartclone.fragments.FindFragment"
+        android:label="fragment_find"
+        tools:layout="@layout/fragment_find" >
+        <action
+            android:id="@+id/action_findFragment2_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordFragment"
+        android:name="com.kemalakkus.istanbulkartclone.fragments.PasswordFragment"
+        android:label="fragment_password"
+        tools:layout="@layout/fragment_password" >
+        <action
+            android:id="@+id/action_passwordFragment_to_myCardsFragment"
+            app:destination="@id/myCardsFragment" />
+        <action
+            android:id="@+id/action_passwordFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+</navigation>

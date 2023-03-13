@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_112sdp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cd_card_item"
+            app:cardBackgroundColor="#E0F5F6"
+            card_view:cardCornerRadius="@dimen/_7sdp"
+            app:cardElevation="4dp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center|top">
+
+                <TextView
+                    android:id="@+id/ik_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mavi Dijital Kartım"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/turkish_lira"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22sdp"
+                    android:textSize="@dimen/_15ssp"
+                    android:text="0,00 TL"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="end">
+
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:src="@drawable/ic_arrow"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_10sdp"/>
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_110sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_25sdp"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="-8dp"
+        android:elevation="@dimen/_2sdp">
+
+        <ImageView
+            android:id="@+id/ik_choise"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_110sdp"
+            android:src="@drawable/ik_dijital"
+            android:scaleType="centerCrop"/>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
